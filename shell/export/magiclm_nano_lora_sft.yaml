@@ -1,0 +1,11 @@
+### model
+model_name_or_path: /home/jovyan/zhubin/saved_checkpoint/0925_magiclm_nano_summary_twophrase_ft_hight/
+adapter_name_or_path: /home/jovyan/zhubin/saved_checkpoint/0925_magiclm_nano_summary_3stage_lora_low_2e6
+template: honor
+finetuning_type: lora
+
+### export
+export_dir: /home/jovyan/zhubin/saved_checkpoint/0925_magiclm_nano_summary_3stage_lora_low/merge/
+export_size: 2
+export_device: cpu
+export_legacy_format: false

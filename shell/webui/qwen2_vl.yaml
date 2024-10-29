@@ -1,0 +1,5 @@
+model_name_or_path: /home/jovyan/zhubin/DATA/models/Qwen2-VL-2B-Instruct/
+adapter_name_or_path: /home/jovyan/zhubin/mllm_output/models/lora_xxy_schedule_Qwen2-VL-2B-Instruct_lk32_ltall_lr2e-05/
+template: qwen2_vl
+finetuning_type: lora
+resize_vocab: true
