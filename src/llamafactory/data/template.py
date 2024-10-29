@@ -62,6 +62,7 @@ class Template:
         r"""
         Returns a single pair of token ids representing prompt and response respectively.
         """
+        
         encoded_messages = self._encode(tokenizer, messages, system, tools)
         prompt_ids = []
         for encoded_ids in encoded_messages[:-1]:
@@ -105,18 +106,16 @@ class Template:
         encoded_messages = []
         for i, message in enumerate(messages):
             elements = []
-
             if i == 0:
                 elements += self.format_prefix.apply()
                 if system or tools:
                     tool_text = self.format_tools.apply(content=tools)[0] if tools else ""
                     elements += self.format_system.apply(content=(system + tool_text))
-
             if i > 0 and i % 2 == 0:
                 elements += self.format_separator.apply()
-
             if message["role"] == Role.USER.value:
                 elements += self.format_user.apply(content=message["content"], idx=str(i // 2))
+                # print(f"elements={elements}")
             elif message["role"] == Role.ASSISTANT.value:
                 elements += self.format_assistant.apply(content=message["content"])
             elif message["role"] == Role.OBSERVATION.value:
@@ -125,9 +124,9 @@ class Template:
                 elements += self.format_function.apply(content=message["content"])
             else:
                 raise NotImplementedError("Unexpected role: {}".format(message["role"]))
-
+            # print(f"elements={elements}")   
             encoded_messages.append(self._convert_elements_to_ids(tokenizer, elements))
-
+            
         return encoded_messages
 
     def _convert_elements_to_ids(self, tokenizer: "PreTrainedTokenizer", elements: "SLOTS") -> List[int]:
@@ -1110,3 +1109,19 @@ _register_template(
     format_user=StringFormatter(slots=["<human>:{{content}}\n<bot>:"]),
     format_separator=EmptyFormatter(slots=["\n"]),
 )
+
+_register_template(
+    name="honor",
+    format_user=StringFormatter(slots=["<TOKENS_UNUSED_1>{{content}}<TOKENS_UNUSED_2>"]),
+    format_assistant=StringFormatter(slots=["{{content}}", {"eos_token"}]),
+    default_system="<s>",
+    format_separator=EmptyFormatter(slots=[""]),
+
+)
+
+
+# _register_template(
+#     name="llama2_honor",
+#     format_user=StringFormatter(slots=[{"bos_token"},"<TOKENS_UNUSED_1>{{content}}<TOKENS_UNUSED_2>"]),
+#     format_system=EmptyFormatter(),
+# 

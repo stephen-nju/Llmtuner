@@ -210,4 +210,5 @@ def load_model(
                 )
             )
 
+    logger.info(f"model architecture>>>{model}")
     return model
