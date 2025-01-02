@@ -619,6 +619,13 @@ _register_template(
 
 
 _register_template(
+    name="deepseek3",
+    format_user=StringFormatter(slots=["<｜User｜>{{content}}<｜Assistant｜>"]),
+    format_prefix=EmptyFormatter(slots=[{"bos_token"}]),
+)
+
+
+_register_template(
     name="deepseekcoder",
     format_user=StringFormatter(slots=["### Instruction:\n{{content}}\n### Response:"]),
     format_assistant=StringFormatter(slots=["\n{{content}}\n<|EOT|>"]),

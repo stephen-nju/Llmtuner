@@ -191,6 +191,7 @@ Compared to ChatGLM's [P-Tuning](https://github.com/THUDM/ChatGLM2-6B/tree/main/
 | [ChatGLM3](https://huggingface.co/THUDM)                          | 6B                               | chatglm3         |
 | [Command R](https://huggingface.co/CohereForAI)                   | 35B/104B                         | cohere           |
 | [DeepSeek (Code/MoE)](https://huggingface.co/deepseek-ai)         | 7B/16B/67B/236B                  | deepseek         |
+| [DeepSeek 2.5/3](https://huggingface.co/deepseek-ai)              | 236B/685B                        | deepseek3        |
 | [Falcon](https://huggingface.co/tiiuae)                           | 7B/11B/40B/180B                  | falcon           |
 | [Gemma/Gemma 2/CodeGemma](https://huggingface.co/google)          | 2B/7B/9B/27B                     | gemma            |
 | [GLM-4](https://huggingface.co/THUDM)                             | 9B                               | glm4             |
@@ -213,7 +214,7 @@ Compared to ChatGLM's [P-Tuning](https://github.com/THUDM/ChatGLM2-6B/tree/main/
 | [Phi-3-small](https://huggingface.co/microsoft)                   | 7B                               | phi_small        |
 | [Pixtral](https://huggingface.co/mistralai)                       | 12B                              | pixtral          |
 | [Qwen/QwQ (1-2.5) (Code/Math/MoE)](https://huggingface.co/Qwen)   | 0.5B/1.5B/3B/7B/14B/32B/72B/110B | qwen             |
-| [Qwen2-VL](https://huggingface.co/Qwen)                           | 2B/7B/72B                        | qwen2_vl         |
+| [Qwen2-VL/QVQ](https://huggingface.co/Qwen)                       | 2B/7B/72B                        | qwen2_vl         |
 | [Skywork o1](https://huggingface.co/Skywork)                      | 8B                               | skywork_o1       |
 | [StarCoder 2](https://huggingface.co/bigcode)                     | 3B/7B/15B                        | -                |
 | [TeleChat2](https://huggingface.co/Tele-AI)                       | 3B/7B/35B/115B                   | telechat2        |
