@@ -1,6 +1,8 @@
 ### model
 model_name_or_path: Qwen/Qwen2-1.5B-Instruct
 
+trust_remote_code: true
+
 ### method
 stage: sft
 do_train: true

@@ -732,7 +732,6 @@ class MllamaPlugin(BasePlugin):
         if len(images) != num_image_tokens:
             raise ValueError(f"The number of images does not match the number of {IMAGE_PLACEHOLDER} tokens.")
 
-
         return messages
 
     @override
@@ -796,13 +795,9 @@ PLUGINS = {
     "paligemma": PaliGemmaPlugin,
     "pixtral": PixtralPlugin,
     "qwen2_vl": Qwen2vlPlugin,
-    "internvl2":Internvl2Plugin,
     "video_llava": VideoLlavaPlugin,
     "mllama": MllamaPlugin,
 }
-
-
-
 
 def get_mm_plugin(
     name: str,

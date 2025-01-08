@@ -148,8 +148,6 @@ def _setup_lora_tuning(
         logger.info_rank0("Fine-tuning method: {}".format("DoRA" if finetuning_args.use_dora else "LoRA"))
 
     adapter_to_resume = None
-    # for name,p in model.named_parameters():
-    #     logger.info(f"model_name={name}")
 
     if model_args.adapter_name_or_path is not None:
         is_mergeable = True
@@ -200,7 +198,6 @@ def _setup_lora_tuning(
         else:
             target_modules = finetuning_args.lora_target
 
-
         if finetuning_args.use_llama_pro:
             target_modules = find_expanded_modules(model, target_modules, finetuning_args.freeze_trainable_layers)
 
@@ -223,7 +220,6 @@ def _setup_lora_tuning(
 
             finetuning_args.additional_target = module_names
             logger.warning_rank0("Vocab has been resized, add {} to trainable params.".format(",".join(module_names)))
-            logger.info_rank0(f"final lora target module {target_modules}")
 
         peft_kwargs = {
             "r": finetuning_args.lora_rank,
@@ -252,7 +248,6 @@ def _setup_lora_tuning(
                 **peft_kwargs,
             )
             model = get_peft_model(model, lora_config)
-        
     if is_trainable and cast_trainable_params_to_fp32:
         for param in filter(lambda p: p.requires_grad, model.parameters()):
             param.data = param.data.to(torch.float32)
