@@ -1,1 +1,1 @@
-WANDB=offline
+WANDB_MODE=offline

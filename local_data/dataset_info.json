@@ -5,7 +5,25 @@
         "formatting": "sharegpt"
     },
     "alpace_gpt4_zh_retain": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/alpaca_gpt4_zh_retain.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/alpaca_gpt4_zh_retain.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": ""
+        }
+    },
+    "baichuan_filter_9w": {
+        "file_name": "/opt/nas/p/qff/dataset/qff/instruction_filter/final_reward_score_threshold_0.85.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": "history"
+        }
+    },
+    "COIG_CQIA_train": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/COIG_CQIA_train.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -14,7 +32,7 @@
         }
     },
     "cnewsum_5w": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/cnewsum_train_shuffle_5w.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/cnewsum_train_shuffle_5w.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -23,7 +41,7 @@
         }
     },
     "csl_9w": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/csl_9w_train_part0.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/csl_9w_train_part0.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -32,7 +50,7 @@
         }
     },
     "lcsts_5w": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/lcsts_5w_train_part0.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/lcsts_5w_train_part0.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -41,7 +59,7 @@
         }
     },
     "vcsum_headlines": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/vcsum_headlines_train_part0.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/vcsum_headlines_train_part0.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -50,7 +68,7 @@
         }
     },
     "firefly_summary_part": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/firefly_1_1M_summary_4_5w_train.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/firefly_1_1M_summary_4_5w_train.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -59,7 +77,7 @@
         }
     },
     "COIG_PC_core_summary_part": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/COIG_PC_core_summary_train.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/COIG_PC_core_summary_train.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -68,30 +86,14 @@
         }
     },
     "baichuan_30w": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/baichuan30w_sharegpt_train.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/baichuan30w_sharegpt_train.json",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations"
-        }
-    },
-    "baichuan_test": {
-        "file_name": "/home/jovyan/zhubin/code/LLaMA-Factory/data/baichuan_multi_test.json",
-        "formatting": "sharegpt",
-        "columns": {
-            "messages": "conversations"
-        }
-    },
-    "conversation_abstract_v1_part0": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/conversation_gpt4_train_v1_part0.json",
-        "columns": {
-            "prompt": "instruction",
-            "query": "input",
-            "response": "output",
-            "history": ""
         }
     },
     "union_conversations_v2": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_train_v2.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_train_v2.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -100,7 +102,7 @@
         }
     },
     "union_conversations_v3": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_train_v3.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_train_v3.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -109,7 +111,7 @@
         }
     },
     "union_conversations_v3_norm": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_train_norm_v3.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_train_norm_v3.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -118,7 +120,16 @@
         }
     },
     "union_conversations_v4_norm": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_train_norm_v4.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_train_norm_v4.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": ""
+        }
+    },
+    "union_conversations_v4_norm_markdown": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_train_norm_v4_markdownv1.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -127,7 +138,7 @@
         }
     },
     "union_conversations_v4_dev": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_dev_iio_llf_v4.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_dev_iio_llf_v4.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -135,8 +146,8 @@
             "history": ""
         }
     },
-    "v4_prompt_test": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_prompttest_train_v4.json",
+    "union_conversations_v5_dev": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_v5/union_conversation_v5.4_iio_llf_dev.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -144,8 +155,8 @@
             "history": ""
         }
     },
-    "v4_high": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_train_norm_v4_high.json",
+    "union_conversations_v5_dev_markdown": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/union_conversations_v5/union_conversation_v5.4_iio_llf_dev_markdownv1.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -153,8 +164,8 @@
             "history": ""
         }
     },
-    "v4_low": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v4/union_conversations_train_norm_v4_low.json",
+    "union_conversations_v4_dev_wo_magic_data": {
+        "file_name": "/opt/nas/p/zhubin/code/LLaMA-Factory/wspace/data/union_conversations_wo_magic_data_dev_iio_llf_v4.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -162,44 +173,86 @@
             "history": ""
         }
     },
-    "upsample": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/upsample.json",
+    "swindle_data_v1":{
+        "file_name":"/opt/nas/p/zhubin/DATA/train_data/zb/swindle_data_v1/diting_swindle_iio_llf_train.json",
+        "columns":{
+            "prompt":"instruction",
+            "query":"input",
+            "response":"output",
+            "history":""
+        }
+    },
+    "dialogsum_chinese":{
+        "file_name":"/opt/nas/p/zhubin/DATA/train_data/zb/dialogsum/dialogsum_conversation_train_iio_llf_v1.json",
+        "columns":{
+            "prompt":"instruction",
+            "query":"input",
+            "response":"output",
+            "history":""
+        }
+    },
+    "dialogsum_chinese_markdown":{
+        "file_name":"/opt/nas/p/zhubin/DATA/train_data/zb/dialogsum/dialogsum_conversation_train_iio_llf_v1_markdownv1.json",
+        "columns":{
+            "prompt":"instruction",
+            "query":"input",
+            "response":"output",
+            "history":""
+        }
+    },
+    "samsum_chinese":{
+        "file_name":"/opt/nas/p/zhubin/DATA/train_data/zb/samsum/samsum_conversation_train_iio_llf_v1.json",
+        "columns":{
+            "prompt":"instruction",
+            "query":"input",
+            "response":"output",
+            "history":""
+        }
+    },
+    "samsum_chinese_markdown":{
+        "file_name":"/opt/nas/p/zhubin/DATA/train_data/zb/samsum/samsum_conversation_train_iio_llf_v1_markdownv1.json",
+        "columns":{
+            "prompt":"instruction",
+            "query":"input",
+            "response":"output",
+            "history":""
+        }
+    },
+    "call_summarization_ppo_train":{
+        "file_name":"/opt/nas/p/zhubin/DATA/train_data/zb/PPO/call_summarization_ppo_train.json",
+        "columns":{
+            "prompt":"instruction",
+            "query":"input",
+            "response":"output",
+            "history":""
+        }
+    },
+    "english_dev": {
+        "file_name": "/opt/nas/p/zhubin/code/LLaMA-Factory/wspace/data/English_ratio.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
-            "response": "output",
             "history": ""
         }
     },
-    "v4_short_prompt": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_shortprompt_v4/union_conversations_short_prompt_train_norm_v4.json",
+    "wuzhiqiang": {
+        "file_name": "/opt/nas/p/zhubin/code/LLaMA-Factory/wspace/data/wuzhiqiang_iio.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
-            "response": "output",
             "history": ""
         }
     },
-    "v4_spf": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_shortprompt_v4/union_conversations_short_prompt_train_filter_norm_v4.json",
+    "test_department_data": {
+        "file_name": "/opt/nas/p/zhubin/code/LLaMA-Factory/wspace/data/conversations_from_magicos_test_dep_iio_llf.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
-            "response": "output",
-            "history": ""
-        }
-    },
-    "v4_short_prompt_dev": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_shortprompt_v4/union_conversations_short_prompt_iio_llf_dev_v4.json",
-        "columns": {
-            "prompt": "instruction",
-            "query": "input",
-            "response": "output",
             "history": ""
         }
     },
     "liantong_conversations_v1": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/liantong_conversations_v1/liantong_conversation_train_norm_v1.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/liantong_conversations_v1/liantong_conversation_train_norm_v1.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -207,35 +260,8 @@
             "history": ""
         }
     },
-    "v3_sample1k": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v3/sample/union_conversations_train_norm_v3_sample1k.json",
-        "columns": {
-            "prompt": "instruction",
-            "query": "input",
-            "response": "output",
-            "history": ""
-        }
-    },
-    "v3_sample3k": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v3/sample/union_conversations_train_norm_v3_sample3k.json",
-        "columns": {
-            "prompt": "instruction",
-            "query": "input",
-            "response": "output",
-            "history": ""
-        }
-    },
-    "v3_sample6k": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v3/sample/union_conversations_train_norm_v3_sample6k.json",
-        "columns": {
-            "prompt": "instruction",
-            "query": "input",
-            "response": "output",
-            "history": ""
-        }
-    },
-    "v3_sample10k": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/union_conversations_v3/sample/union_conversations_train_norm_v3_sample10k.json",
+    "liantong_conversations_v1_markdown": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/liantong_conversations_v1/liantong_conversation_train_norm_v1_markdownv1.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -244,7 +270,7 @@
         }
     },
     "dialogsum": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/dialogsum_train.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/dialogsum_train.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -253,7 +279,7 @@
         }
     },
     "csds_dialogue": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/csds_dialogue_train_v0.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/csds_dialogue_train_v0.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -262,7 +288,7 @@
         }
     },
     "alimeeting": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/alimeeting_train_v0.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/alimeeting_train_v0.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -271,7 +297,7 @@
         }
     },
     "docsum": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/doc_sum_qwen72b_train.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/doc_sum_qwen72b_train.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -280,14 +306,14 @@
         }
     },
     "infinity_instruct": {
-        "file_name": "/home/jovyan/zhubin/DATA/raw_data/hf_data/BAAI/Infinity-Instruct/train.jsonl",
+        "file_name": "/opt/nas/p/zhubin/DATA/raw_data/hf_data/BAAI/Infinity-Instruct/train.jsonl",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations"
         }
     },
     "union_conversations_dev_v2": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/dev/union_conversations_dev_iio_lff_v2.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/dev/union_conversations_dev_iio_lff_v2.json",
         "columns": {
             "prompt": "instruction",
             "query": "input",
@@ -296,35 +322,98 @@
         }
     },
     "baichuan_30w_less_top0_05": {
-        "file_name": "/home/jovyan/zhubin/code/selected_data/baichuan30w_shartgpt_train_less_top0.05.json",
+        "file_name": "/opt/nas/p/zhubin/code/selected_data/baichuan30w_shartgpt_train_less_top0.05.json",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations"
         }
     },
     "baichuan_30w_less_top0_2": {
-        "file_name": "/home/jovyan/zhubin/code/selected_data/baichuan30w_shartgpt_train_less_top0.2.json",
+        "file_name": "/opt/nas/p/zhubin/code/selected_data/baichuan30w_shartgpt_train_less_top0.2.json",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations"
         }
     },
     "baichuan_30w_lcsts_less_top0_05": {
-        "file_name": "/home/jovyan/zhubin/code/selected_data/baichuan30w_shartgpt_train_lscts_less_top0.05.json",
+        "file_name": "/opt/nas/p/zhubin/code/selected_data/baichuan30w_shartgpt_train_lscts_less_top0.05.json",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations"
         }
     },
     "baichuan_30w_lcsts_less_top0_2": {
-        "file_name": "/home/jovyan/zhubin/code/selected_data/baichuan30w_shartgpt_train_lscts_less_top0.2.json",
+        "file_name": "/opt/nas/p/zhubin/code/selected_data/baichuan30w_shartgpt_train_lscts_less_top0.2.json",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations"
         }
     },
-    "union_conv_v1_dpo": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/DPO/union_conversations_dpo_v1_train.json",
+    "realconv_instruct_markdown": {
+        "file_name": "/opt/nas/p/zhubin/code/DataGeneration/DPO/real_conversation_markdown_instruction.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": ""
+        }
+    },
+    "naturalconv9k_instruct_markdown": {
+        "file_name": "/opt/nas/p/zhubin/code/DataGeneration/DPO/natural_conv9k_markdown_instruction.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": ""
+        }
+    },
+    "conversation_dpo_v2": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/DPO/conversations_dpo_v2_train.json",
+        "ranking": true,
+        "columns": {
+            "prompt": "instruction",
+            "chosen": "chosen",
+            "rejected": "rejected"
+        }
+    },
+    "conversation_dpo_v3": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/DPO/conversation_dpo_train_v3.json",
+        "ranking": true,
+        "columns": {
+            "prompt": "instruction",
+            "chosen": "chosen",
+            "rejected": "rejected"
+        }
+    },
+    "real_conversation_dpo_v2": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/DPO/real_conversation_dpo_data_train_v2.json",
+        "ranking": true,
+        "columns": {
+            "prompt": "instruction",
+            "chosen": "chosen",
+            "rejected": "rejected"
+        }
+    },
+    "natrual_conv9k_v2": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/DPO/natural_conv9k_dpo_train_v2.json",
+        "ranking": true,
+        "columns": {
+            "prompt": "instruction",
+            "chosen": "chosen",
+            "rejected": "rejected"
+        }
+    },
+    "real_conversation_noise_dpo_v2": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/DPO/real_conversation_v2_noise_dpo.json",
+        "ranking": true,
+        "columns": {
+            "prompt": "instruction",
+            "chosen": "chosen",
+            "rejected": "rejected"
+        }
+    },
+    "natrual_conv9k_noise_v2": {
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/DPO/natural_conv9k_v2_noise_dpo.json",
         "ranking": true,
         "columns": {
             "prompt": "instruction",
@@ -333,7 +422,7 @@
         }
     },
     "union_conv_v1_dpo_sample": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/zb/DPO/union_conversations_dpo_v1_train_sample2k.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/zb/DPO/union_conversations_dpo_v1_train_sample2k.json",
         "ranking": true,
         "columns": {
             "prompt": "instruction",
@@ -342,7 +431,7 @@
         }
     },
     "xxy_schedule": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/schedule/xxy_train_0911.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/schedule/xxy_train_0911.json",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations",
@@ -350,7 +439,7 @@
         }
     },
     "xxy_schedule_test": {
-        "file_name": "/home/jovyan/zhubin/DATA/train_data/schedule/xxy_test_8垂域_test_v5_update_moretag_时间修改v2_医疗修改_v3.json",
+        "file_name": "/opt/nas/p/zhubin/DATA/train_data/schedule/xxy_test_8垂域_test_v5_update_moretag_时间修改v2_医疗修改_v3.json",
         "formatting": "sharegpt",
         "columns": {
             "messages": "conversations",
@@ -358,7 +447,7 @@
         }
     },
     "rym_ner_train": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/train.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/train.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -366,7 +455,7 @@
     }
   },
   "任意门实体识别_实体识别_eval": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/test.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/test.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -374,7 +463,7 @@
     }
   },
   "common_rym_ner_train": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/通用_train.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/通用_train.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -382,7 +471,7 @@
     }
   },
   "common_任意门实体识别_实体识别_eval": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/通用_test.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/任意门实体识别_实体识别_严德美/通用_test.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -390,7 +479,7 @@
     }
   },
   "yjzl_train": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/用机助理/train.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/用机助理/train.json",
     "columns": {
       "prompt": "instruction",
       "query": "input",
@@ -398,7 +487,7 @@
     }
   },
   "yjzl_eval": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/用机助理/test.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/用机助理/test.json",
     "columns": {
       "prompt": "instruction",
       "query": "input",
@@ -407,7 +496,7 @@
   },
 
   "thzy_train": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/通话摘要/union_conversations_train_v3.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/通话摘要/union_conversations_train_v3.json",
     "columns": {
       "prompt": "instruction",
       "query": "input",
@@ -415,7 +504,7 @@
     }
   },
   "thzy_eval": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/通话摘要/union_conversations_dev_iio_lff_v2.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/通话摘要/union_conversations_dev_iio_lff_v2.json",
     "columns": {
       "prompt": "instruction",
       "query": "input",
@@ -423,7 +512,7 @@
     }
   },
   "rccq_train": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/日程抽取/train.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/日程抽取/train.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -431,7 +520,7 @@
     }
   },
   "rccq_eval": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/日程抽取/dev.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/日程抽取/dev.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -439,7 +528,7 @@
     }
   },
   "rccq_final_valid": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/日程抽取/final_valid.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/日程抽取/final_valid.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -449,7 +538,7 @@
 
 
   "tzjx_train": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/通知解析/train.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/通知解析/train.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -457,7 +546,7 @@
     }
   },
   "tzjx_eval": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/通知解析/dev.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/通知解析/dev.json",
     "columns": {
       "prompt": "input",
       "query": "",
@@ -466,7 +555,7 @@
   },
 
   "gjccq_train": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/关键词抽取/train_corrected.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/关键词抽取/train_corrected.json",
     "columns": {
       "prompt": "instruction",
       "query": "input",
@@ -475,7 +564,7 @@
     }
   },
   "gjccq_eval": {
-    "file_name": "/home/jovyan/qff/dataset/working_datas/关键词抽取/valid.json",
+    "file_name": "/opt/nas/p/qff/dataset/working_datas/关键词抽取/valid.json",
     "columns": {
       "prompt": "input",
       "query": "",

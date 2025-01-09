@@ -77,6 +77,7 @@ def _training_function(config: Dict[str, Any]) -> None:
 
 
 def run_exp(args: Optional[Dict[str, Any]] = None, callbacks: Optional[List["TrainerCallback"]] = None) -> None:
+    logger.info_rank0(f"WANDB_MODE: {os.environ.get('WANDB_MODE')}.")
     args = read_args(args)
     ray_args = get_ray_args(args)
     callbacks = callbacks or []

@@ -701,6 +701,17 @@ _register_template(
     efficient_eos=True,
 )
 
+_register_template(
+    name="glm4edge",
+    format_user=StringFormatter(slots=["<|user|>\n{{content}}<|assistant|>"]),
+    format_assistant=StringFormatter(slots=["\n{{content}}"]),
+    format_system=StringFormatter(slots=["<|system|>\n{{content}}"]),
+    format_function=FunctionFormatter(slots=["{{content}}"], tool_format="glm4"),
+    format_observation=StringFormatter(slots=["<|observation|>\n{{content}}<|assistant|>"]),
+    format_tools=ToolFormatter(tool_format="glm4"),
+    stop_words=["<|user|>", "<|observation|>"],
+    efficient_eos=True,
+)
 
 _register_template(
     name="granite3",
@@ -1289,3 +1300,4 @@ _register_template(
     format_user=StringFormatter(slots=["<human>:{{content}}\n<bot>:"]),
     format_separator=EmptyFormatter(slots=["\n"]),
 )
+

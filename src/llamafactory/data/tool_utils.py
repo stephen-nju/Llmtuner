@@ -23,7 +23,11 @@ from typing_extensions import override
 
 from .data_utils import SLOTS
 
+class FunctionCall(NamedTuple):
+    name: str
+    arguments: str
 
+    
 DEFAULT_TOOL_PROMPT = (
     "You have access to the following tools:\n{tool_text}"
     "Use the following format if using a tool:\n"

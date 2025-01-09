@@ -20,7 +20,6 @@ export NCCL_IB_TC=160
 export NCCL_NET_GDR_LEVEL=2
 export NCCL_IB_HCA=mlx5_bond_0,mlx5_bond_1,mlx5_bond_2,mlx5_bond_3,mlx5_bond_4,mlx5_bond_5,mlx5_bond_6,mlx5_bond_7
 export NCCL_ALGO=Ring
-export DS_ENV_FILE=/opt/nas/p/zhubin/code/Llmtuner/.deepspeed_env
 export PROJECT_PATH=/opt/nas/p/zhubin/code/Llmtuner/
 
 cd ${PROJECT_PATH}
@@ -235,6 +234,7 @@ export HOSTFILE=/opt/nas/p/zhubin/code/Llmtuner/config/hostfile
 mkdir -p ${OUTPUT_DIR}
 mkdir -p ${WANDB_DIR}
 
+export WANDB_MODE=offline
 echo "wandb dir=$WANDB_DIR"
 deepspeed --hostfile=${HOSTFILE} --master_port=${MASTER_PORT} "${deepspeed_params[@]}" --no_local_rank \
 	src/train.py \
